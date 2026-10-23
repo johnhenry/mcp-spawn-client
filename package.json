@@ -1,17 +1,14 @@
 {
-  "name": "mcp-spawn-client",
-  "version": "0.0.0",
+  "name": "@johnhenry/mcp-spawn-client",
+  "version": "0.1.0",
   "description": "Spawn Model Context Protocol clients connected to servers using in-memory transports",
+  "type": "module",
   "main": "index.mjs",
   "types": "types.d.ts",
-  "type": "module",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/modelcontextprotocol/mcp-spawn-client"
-  },
-  "bugs": {
-    "url": "https://github.com/modelcontextprotocol/mcp-spawn-client/issues"
-  },
+  "files": [
+    "index.mjs",
+    "types.d.ts"
+  ],
   "keywords": [
     "mcp",
     "model-context-protocol",
@@ -19,9 +16,26 @@
     "spawn",
     "testing"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "John Henry <john@iamjohnhenry.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.10.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnhenry/mcp-spawn-client.git"
+  },
+  "homepage": "https://github.com/johnhenry/mcp-spawn-client#readme",
+  "bugs": {
+    "url": "https://github.com/johnhenry/mcp-spawn-client/issues"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
   }
 }

@@ -1,17 +1,19 @@
 # MCP Spawn Client
 
+> Previously published on npm as `mcp-spawn-client` (unscoped). That name is no longer updated; use `@johnhenry/mcp-spawn-client`.
+
 A utility module for spawning Model Context Protocol (MCP) clients connected to servers using in-memory transports.
 
 ## Installation
 
 ```bash
-npm install mcp-client-router
+npm install @johnhenry/mcp-spawn-client
 ```
 
 ## Usage
 
 ```javascript
-import { spawnClient } from 'mcp-client-router/spawn-client';
+import { spawnClient } from '@johnhenry/mcp-spawn-client';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 
 // Create a server
